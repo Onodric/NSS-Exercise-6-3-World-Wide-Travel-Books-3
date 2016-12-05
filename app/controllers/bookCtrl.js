@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller('bookCtrl', ($scope, BookStorage) => {
+app.controller('bookCtrl', function($scope, BookStorage) {
   $scope.title = "Angular Book List";
 
   $scope.books = [];
