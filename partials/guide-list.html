@@ -1,0 +1,16 @@
+<header id="page-head">
+  <h1>{{title}}</h1>
+</header>
+<main class="container" id="wrapper">
+  <div class="row">
+<!-- Insert a book here         -->
+    <div class="col-sm-6 col-md-4" ng-repeat="book in books">
+      <div class="col-md-12 bookCard">
+        <h3>{{book.title}}</h2>
+        <h4>${{book.price | number:2}}</h4>
+        <h5>{{book.type}}</h5>
+      </div>
+   </div>
+  </div>
+</main>
+
